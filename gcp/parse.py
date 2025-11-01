@@ -50,6 +50,6 @@ filename = 'gcp/colors/le450_5a.col.txt' # k=5
 #filename = 'queen8_8.col' # k=9
 #filename = 'myciel6.col' # k=7
 n, m, E = parse_graph(filename)
-k = 5
+k = 6
 sat_n, sat_m, sat_clauses = generate_kcoloring_sat_formula(n, m, E, k=k)
 export_dimacs(sat_n, sat_m, sat_clauses, filename='gcp/cnf/sat_input_k{}.txt'.format(k))
