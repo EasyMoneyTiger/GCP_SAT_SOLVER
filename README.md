@@ -176,14 +176,14 @@ s UNSATISFIABLE
 
 Run tests:
 ```bash
-python -m pytest test/
-python test/test.py
+python -m pkg.main gcp/cnf/sat_input_k5.txt
+or
+python -m test.test gcp/cnf/sat_input_k5.txt
 ```
 
 Run benchmarks on SAT competition instances:
 ```bash
-python test/test_uf20-91.py
-python test/test_uuf50-218.py
+python -m test.test test/uf20-91/uf20-01.cnf
 python test/heuristics_benchmark.py
 ```
 
@@ -232,13 +232,9 @@ Performance varies significantly based on:
 - Selected branching heuristic
 - Instance structure and properties
 
-## 许可证 (License)
-
-This project is part of the GCP_SAT_SOLVER research project.
-
 ## 作者 (Authors)
 
-Implementation of SAT solver with CDCL algorithm and multiple heuristics.
+EasyMoneyTiger
 
 ## 参考资源 (References)
 
@@ -248,4 +244,4 @@ Implementation of SAT solver with CDCL algorithm and multiple heuristics.
 
 ---
 
-**Last Updated**: December 2024
+**Last Updated**: February 2026
